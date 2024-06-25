@@ -1,0 +1,32 @@
+---
+---
+
+<head>
+    <link rel="stylesheet" href="assets/css/homeStyles.css" />
+</head>
+
+<header></header>
+<footer></footer>
+
+<a class="back-button" href="https://liamb09.github.io">&ltrif; Back</a>
+
+<div class="spacer"></div>
+
+<h1 id="section-header">Blog</h1>
+
+<ul id="blog-list">
+    {% for post in site.posts %}
+        <li>
+            <a href="{{ post.url | relative_url }}"><article id="blog-list-item">
+                <div id="blog-list-item-text">
+                    <h1>{{ post.title }}</h1>
+                    <p>{{ post.date | date: "%B %-d, %Y" }}</p>
+                    <p>{{ post.description }}</p>
+                </div>
+                {% if post.image != nil %}
+                    <img src="assets/images/{{ post.image }}" alt="post image" id="blog-list-image"/>
+                {% endif %}
+            </article></a>
+        </li>
+    {% endfor %}
+</ul>
