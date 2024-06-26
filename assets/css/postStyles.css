@@ -99,6 +99,16 @@ footer {
     height: 10vh;
 }
 
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color .25s;
+}
+
+a:hover {
+    color: var(--off-white);
+}
+
 /* Code formatting from _site/main.css */
 pre, code {
     font-size: 15px;
