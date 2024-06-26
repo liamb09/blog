@@ -141,24 +141,48 @@ pre > code {
 @media (max-width: 480px) {
     html {
         font-size: 10px;
+        background-color: red;
     }
 
     .back-button {
-        top: .5rem;
+        color: red;
         left: 50%;
         transform: translate(-50%, 0%);
         -ms-transform: translate(-50%, 0%);
+        top: .5rem;
     }
 
     .blog-content {
         margin-left: 15%;
         margin-right: 15%;
         width: 70%;
-        overflow-wrap: break-word;
     }
 
-    .blog-body > img {
+    #blog-list-item {
+        width: calc(25rem - 2rem);
+        display: block;
+    }
+
+    #blog-list-image {
         width: 100%;
-        height: auto;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+
+    .sidebar {
+        display: flex;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+        gap: .5rem;
+        top: .5rem;
+    }
+
+    .home-link {
+        margin-top: .5rem !important;
     }
 }

@@ -25,7 +25,7 @@ button {
 }
 
 .back-button {
-    color: var(--primary);
+    color: red;
     top: 50%;
     left: .5rem;
     transform: translate(0%, -50%);
@@ -97,38 +97,15 @@ button {
 @media (max-width: 480px) {
     html {
         font-size: 10px;
+        background-color: red;
     }
 
-    .sidebar {
-        display: flex;
-        left: 50%;
+    .back-button {
+        color: red;
+        /* left: 50%;
         transform: translate(-50%, 0%);
         -ms-transform: translate(-50%, 0%);
-        gap: .5rem;
-        top: .5rem;
-    }
-
-    .home-link {
-        margin-top: .5rem !important;
-    }
-
-    .name-container > h1 {
-        line-height: 6rem;
-    }
-
-    .name-container {
-        padding: 0;
-        width: 100%;
-    }
-
-    .name-container > h1 {
-        font-size: 6rem;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    #dialog-details > p {
-        width: calc(100% - 4rem);
+        top: .5rem; */
     }
 
     #blog-list-item {
