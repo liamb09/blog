@@ -8,6 +8,7 @@
     --large-font-size: 1.4rem;
     --section-header-font-size: 3rem;
     --small-font-size: 1rem;
+    --normal-font-size: 1.2rem;
 }
 
 * {
@@ -75,7 +76,7 @@ footer {
 }
 
 .blog-body {
-    font-size: var(--large-font-size);
+    font-size: var(--normal-font-size);
     color: var(--off-white);
 }
 
@@ -96,6 +97,35 @@ footer {
 
 .footer-space {
     height: 10vh;
+}
+
+/* Code formatting from _site/main.css */
+pre, code {
+    font-size: 15px;
+    /* border: 1px solid #e8e8e8;  */
+    border-radius: 3px;
+    background-color: var(--dark-grey);
+    font-size: var(--normal-font-size);
+}
+
+code {
+    padding: 1px 5px;
+}
+
+pre {
+    padding: 8px 12px;
+    overflow-x: auto;
+}
+
+pre > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.highlight {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 @media (max-width: 480px) {
