@@ -20,12 +20,16 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    margin: 0;
+}
+
 button {
     cursor: pointer;
 }
 
 .back-button {
-    color: red;
+    color: var(--primary);
     top: 50%;
     left: .5rem;
     transform: translate(0%, -50%);
@@ -97,15 +101,13 @@ button {
 @media (max-width: 480px) {
     html {
         font-size: 10px;
-        background-color: red;
     }
 
     .back-button {
-        color: red;
-        /* left: 50%;
+        top: .5rem;
+        left: 50%;
         transform: translate(-50%, 0%);
         -ms-transform: translate(-50%, 0%);
-        top: .5rem; */
     }
 
     #blog-list-item {

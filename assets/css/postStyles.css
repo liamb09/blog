@@ -22,6 +22,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    margin: 0;
+}
+
 header {
     top: 0;
     position: fixed;
@@ -141,21 +145,23 @@ pre > code {
 @media (max-width: 480px) {
     html {
         font-size: 10px;
-        background-color: red;
     }
 
     .back-button {
-        color: red;
+        top: .5rem;
         left: 50%;
         transform: translate(-50%, 0%);
         -ms-transform: translate(-50%, 0%);
-        top: .5rem;
     }
 
     .blog-content {
         margin-left: 15%;
         margin-right: 15%;
         width: 70%;
+    }
+
+    .blog-body {
+        font-size: var(--large-font-size);
     }
 
     #blog-list-item {
