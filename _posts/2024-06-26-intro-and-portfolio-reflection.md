@@ -2,7 +2,7 @@
 layout:      post
 title:       "Introduction + Portfolio Reflection"
 date:        2024-06-26 16:00:00 -0500
-description: Discussing making my portfolio site.
+description: In this post, I discuss how I made my portfolio site.
 image:       website.png
 ---
 
@@ -40,6 +40,6 @@ function closeDialog () {
 
 From there, it was just making final touches. I learned how to use CSS media queries to make my site responsive, which was surprisingly easy. Then came the part that was really uncharted territory for me: hosting my site online. A couple of my friends have portfolio websites with their name as the domain, which would be cool, but I eventually settled on using GitHub Pages, which turned out to be a seamless transition, and best of all, it was free. Plus, I can buy a domain to redirect to this site later if I want to.
 
-## Final Words
+## Final words
 
 Well, that’s just about it. My first blog post, finished! At the time of writing this, I haven’t even finished touching up the blog part of my website, but I wanted to get something down about the homepage of my website. Bye!
