@@ -25,6 +25,7 @@ I ran into one of my first main problems with my portfolio list of projects. To 
 Another tough thing was animating the ``<dialog>``. I wanted it to slide and fade in, but I was having trouble because of the way ``<dialog>``s work in HTML. When you close a ``<dialog>``, it sets the ``display`` to ``none``, and you cannot animate it in from there. After some digging, I found a really helpful [video](https://www.youtube.com/watch?v=4prVdA7_6u0) from Kevin Powell that used a clever workaround: instead of immediately closing the popup and therefore setting ``display`` to ``none``, you can first animate its opacity down to 0 to fade it out, then close it. Using a similar technique for opening the popup worked great for me, and I was all set.
 
 ```javascript
+// To animate a closing dialog
 function closeDialog () {
     dialog = document.getElementById("project-info-dialog");
     // Add the closing class to the dialog to fade it out
@@ -42,4 +43,4 @@ From there, it was just making final touches. I learned how to use CSS media que
 
 ## Final words
 
-Well, that’s just about it. My first blog post, finished! At the time of writing this, I haven’t even finished touching up the blog part of my website, but I wanted to get something down about the homepage of my website. Bye!
+Well, that’s just about it. My first blog post, finished! At the time of writing this, I haven’t even finished touching up the blog part of my website, but I wanted to get something down about the homepage of my website.
