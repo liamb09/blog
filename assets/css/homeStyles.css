@@ -29,6 +29,7 @@ button {
 }
 
 .back-button {
+    font-weight: bold;
     color: var(--primary);
     top: 50%;
     left: .5rem;
@@ -37,6 +38,10 @@ button {
     position: fixed;
     font-size: var(--large-font-size);
     text-decoration: none;
+}
+
+.back-button:hover {
+    color: var(--off-white);
 }
 
 #section-header {
