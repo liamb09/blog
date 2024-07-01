@@ -222,6 +222,8 @@ pre > code {
 
     .blog-content {
         width: calc(25rem - 2rem);
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .blog-body {
