@@ -4,6 +4,7 @@ title:       "Making this blog"
 date:        2024-07-01 11:30:00 -0500
 description: In this post, I discuss how I made this blog site.
 image:       blog.png
+tags:        coding jekyll
 ---
 
 ## Introduction

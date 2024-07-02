@@ -16,6 +16,11 @@
     <div class="spacer"></div>
     <h1 class="blog-title">{{ page.title }}</h1>
     <p class="blog-date">{{ page.date | date: "%B %-d, %Y" }}</p>
+    <div id="tags">
+        {% for tag in page.tags %}
+            <p id="post-tag" class="{{ tag }}">{{ tag }}</p>
+        {% endfor %}
+    </div>
     <div class="blog-body">
         {{content}}
     </div>

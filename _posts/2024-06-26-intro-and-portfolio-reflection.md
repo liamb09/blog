@@ -4,6 +4,7 @@ title:       "Introduction + Portfolio Reflection"
 date:        2024-06-26 16:00:00 -0500
 description: In this post, I discuss how I made my portfolio site.
 image:       website.png
+tags:        coding awesome cool fun
 ---
 
 ## Introduction

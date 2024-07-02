@@ -84,7 +84,7 @@ button {
 
 #blog-list-item:hover {
     box-shadow: inset 52rem 0 0 0 var(--primary);
-    color: var(--black)
+    color: var(--black);
 }
 
 #blog-list-item-text {
@@ -93,6 +93,20 @@ button {
 
 #blog-list-item-text > h1 {
     font-size: var(--large-font-size);
+}
+
+#blog-list-tags {
+    display: flex;
+    gap: 1rem;
+}
+
+#post-tag {
+    border: 1px solid;
+    border-radius: 1rem;
+    padding: .1rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    margin: 0;
 }
 
 #blog-list-image {

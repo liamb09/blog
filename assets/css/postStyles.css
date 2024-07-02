@@ -88,6 +88,21 @@ footer {
     color: var(--light-grey);
 }
 
+#tags {
+    display: flex;
+    gap: 1rem;
+}
+
+#post-tag {
+    color: var(--off-white);
+    border: 1px solid var(--off-white);
+    border-radius: 1rem;
+    padding: .1rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    margin: 0;
+}
+
 .blog-body {
     font-size: var(--normal-font-size);
     color: var(--off-white);

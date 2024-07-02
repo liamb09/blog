@@ -23,6 +23,11 @@
                 <div id="blog-list-item-text">
                     <h1>{{ post.title }}</h1>
                     <p>{{ post.date | date: "%B %-d, %Y" }}</p>
+                    <div id="blog-list-tags">
+                        {% for tag in post.tags %}
+                            <p id="post-tag" class="{{ tag }}">{{ tag }}</p>
+                        {% endfor %}
+                    </div>
                     <p>{{ post.description }}</p>
                 </div>
                 {% if post.image != nil %}
