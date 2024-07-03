@@ -67,17 +67,18 @@
 
 <h1 id="section-header">Blog</h1>
 
-<p class="filter-label">Filter by tag: </p>
+<p class="filter-label">Filter by tag: (some of these are random for testing at the moment)</p>
 
 {% if site.tags.size > 1 %}
     <div id="tag-menu">
         {% for tag in site.tags %}
             <p class="tag-menu-item" onclick="filterPosts('{{ tag[0] }}')">{{ tag[0] }}</p>
         {% endfor %}
-        <p id="remove-filter" onclick="removeFilter()">&#x2715;</p>
+        <p id="remove-filter" onclick="removeFilter()" hidden>&#x2715;</p>
     </div>
 {% endif %}
 
+<!--  -->
 <ul id="blog-list">
     {% for post in site.posts %}
         <li class='{{ post.tags | join: " " }}'>

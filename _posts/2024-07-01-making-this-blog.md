@@ -4,14 +4,10 @@ title:       "Making this blog"
 date:        2024-07-01 11:30:00 -0500
 description: In this post, I discuss how I made this blog site.
 image:       blog.png
-tags:        coding interesting
+tags:        coding jekyll
 ---
 
-## Introduction
-
 Hi again! Now that I have fully fleshed out this blog page to the point that I am happy, I want to sort of debrief and explain how I went from clueless with Jekyll to slightly less clueless and some of the problems I had.
-
-## Making this blog
 
 After finishing my portfolio page, I was eager to move on to a blog, because, well, that’s just what I’ve seen a lot of people do. Also, my 7th grade coding teacher said that this is a good thing to have, so here I am.
 
