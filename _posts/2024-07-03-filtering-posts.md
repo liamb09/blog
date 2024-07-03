@@ -1,7 +1,7 @@
 ---
 layout:      post
 title:       "Filtering posts"
-date:        2024-07-03 17:00:00 -0500
+date:        2024-07-03 16:00:00 -0500
 description: Here I talk about how I created a filter for my blog posts.
 image:       blogWithFilter.png
 tags:        coding jekyll
