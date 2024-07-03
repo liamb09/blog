@@ -19,13 +19,13 @@
             // Make sure they're all hidden
             liElements = document.getElementsByTagName("li");
             for (var i = 0; i < liElements.length; i++) {
-                liElements[i].classList.add("hidden-post");
+                liElements[i].setAttribute("hidden", "");
             }
 
             // Remove hidden from posts that have tag
             selectedPosts = document.getElementsByClassName(tag);
             for (var i = 0; i < selectedPosts.length; i++) {
-                selectedPosts[i].classList.remove("hidden-post");
+                selectedPosts[i].removeAttribute("hidden");
             }
         }
 
@@ -33,8 +33,8 @@
             // Make sure no posts are hidden
             liElements = document.getElementsByTagName("li");
             for (var i = 0; i < liElements.length; i++) {
-                if (liElements[i].classList.contains("hidden-post")) {
-                    liElements[i].classList.remove("hidden-post");
+                if (liElements[i].hasAttribute("hidden")) {
+                    liElements[i].removeAttribute("hidden");
                 }
             }
 
@@ -68,6 +68,7 @@
         {% for tag in site.tags %}
             <p class="tag-menu-item" onclick="filterPosts('{{ tag[0] }}')">{{ tag[0] }}</p>
         {% endfor %}
+        <p></p>
     </div>
 {% endif %}
 
