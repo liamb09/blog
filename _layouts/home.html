@@ -7,6 +7,9 @@
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <script>
         function filterPosts (tag) {
+            // Show remove filter button
+            document.getElementById("remove-filter").removeAttribute("hidden");
+
             // Make sure tag is visibly selected
             unselectTags();
             tags = document.getElementsByClassName("tag-menu-item");
@@ -38,6 +41,9 @@
                 }
             }
 
+            // Hide remove filter button
+            document.getElementById("remove-filter").setAttribute("hidden", "");
+
             unselectTags();
         }
 
@@ -68,7 +74,7 @@
         {% for tag in site.tags %}
             <p class="tag-menu-item" onclick="filterPosts('{{ tag[0] }}')">{{ tag[0] }}</p>
         {% endfor %}
-        <p></p>
+        <p id="remove-filter" onclick="removeFilter()">&#x2715;</p>
     </div>
 {% endif %}
 

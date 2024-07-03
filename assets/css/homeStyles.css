@@ -73,7 +73,7 @@ button {
     padding: .1rem;
     padding-left: .75rem;
     padding-right: .75rem;
-    margin-top: 0;
+    margin: 0;
     border: 1px solid;
     transition: all .25s;
 }
@@ -88,6 +88,11 @@ button {
     background-color: var(--primary);
     color: var(--black);
     border: 1px solid var(--primary);
+}
+
+#remove-filter {
+    color: var(--primary);
+    margin: 0;
 }
 
 /* 
