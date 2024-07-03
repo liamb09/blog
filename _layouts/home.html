@@ -5,6 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=yes" />
     <title>Blog</title>
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <script>
+        function filterPosts (tag) {
+            // Make sure tag is visibly selected
+            unselectTags();
+            tags = document.getElementsByClassName("tag-menu-item");
+            for (var i = 0; i < tags.length; i++) {
+                if (tags[i].innerHTML == tag) {
+                    tags[i].classList.add("selected-tag");
+                }
+            }
+
+            // Make sure they're all hidden
+            liElements = document.getElementsByTagName("li");
+            for (var i = 0; i < liElements.length; i++) {
+                liElements[i].classList.add("hidden-post");
+            }
+
+            // Remove hidden from posts that have tag
+            selectedPosts = document.getElementsByClassName(tag);
+            for (var i = 0; i < selectedPosts.length; i++) {
+                selectedPosts[i].classList.remove("hidden-post");
+            }
+        }
+
+        function removeFilter () {
+            // Make sure no posts are hidden
+            liElements = document.getElementsByTagName("li");
+            for (var i = 0; i < liElements.length; i++) {
+                if (liElements[i].classList.contains("hidden-post")) {
+                    liElements[i].classList.remove("hidden-post");
+                }
+            }
+
+            unselectTags();
+        }
+
+        function unselectTags () {
+            tags = document.getElementsByClassName("tag-menu-item");
+            for (var i = 0; i < tags.length; i++) {
+                if (tags[i].classList.contains("selected-tag")) {
+                    tags[i].classList.remove("selected-tag");
+                }
+            }
+        }
+    </script>
 </head>
 
 {% include header.html %}
@@ -16,16 +61,26 @@
 
 <h1 id="section-header">Blog</h1>
 
+<p class="filter-label">Filter by tag: </p>
+
+{% if site.tags.size > 1 %}
+    <div id="tag-menu">
+        {% for tag in site.tags %}
+            <p class="tag-menu-item" onclick="filterPosts('{{ tag[0] }}')">{{ tag[0] }}</p>
+        {% endfor %}
+    </div>
+{% endif %}
+
 <ul id="blog-list">
     {% for post in site.posts %}
-        <li>
+        <li class='{{ post.tags | join: " " }}'>
             <a href="{{ post.url | relative_url }}"><article id="blog-list-item">
                 <div id="blog-list-item-text">
                     <h1>{{ post.title }}</h1>
                     <p>{{ post.date | date: "%B %-d, %Y" }}</p>
                     <div id="blog-list-tags">
                         {% for tag in post.tags %}
-                            <p id="post-tag" class="{{ tag }}">{{ tag }}</p>
+                            <p id="post-tag">{{ tag }}</p>
                         {% endfor %}
                     </div>
                     <p>{{ post.description }}</p>

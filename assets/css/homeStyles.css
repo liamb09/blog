@@ -55,6 +55,48 @@ button {
     height: 10vh;
 }
 
+.filter-label {
+    color: var(--off-white);
+    text-align: center;
+}
+
+#tag-menu {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.tag-menu-item {
+    color: var(--off-white);
+    cursor: pointer;
+    border-radius: 1rem;
+    padding: .1rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    margin-top: 0;
+    border: 1px solid;
+    transition: all .25s;
+}
+
+.tag-menu-item:hover {
+    background-color: var(--primary);
+    color: var(--black);
+    border: 1px solid var(--primary);
+}
+
+.selected-tag {
+    background-color: var(--primary);
+    color: var(--black);
+    border: 1px solid var(--primary);
+}
+
+/* 
+TODO: 
+    add tag headers at top of blog list page to filter posts,
+    and fix home page glitch where you can still click on a post
+    even if your mouse is to the left or right of the card.
+*/
+
 #blog-list {
     color: var(--off-white);
     list-style-type: none;
@@ -65,9 +107,14 @@ button {
     margin-bottom: 1rem;
 }
 
+.hidden {
+    display: none;
+}
+
 #blog-list > li > a {
     text-decoration: none;
     color: var(--off-white);
+    display: block;
 }
 
 #blog-list-item {
