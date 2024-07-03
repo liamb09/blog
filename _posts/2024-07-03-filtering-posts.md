@@ -15,7 +15,7 @@ Before I moved on to my other projects, there was one main thing that I wanted t
 
 My first plan for the filter was to somehow have some JavaScript variable that I could use to show only the posts with that tag, with something like this:
 
-```
+```html
 { % for post in site.posts %}
     { % if post.tags contains "some-tag" %}
         <!-- Display the post -->
@@ -68,19 +68,19 @@ Next, I created a function to clear all filters: ``removeFilter``.
 
 ```javascript
 function removeFilter () {
-            // Make sure no posts are hidden
-            liElements = document.getElementsByTagName("li");
-            for (var i = 0; i < liElements.length; i++) {
-                if (liElements[i].hasAttribute("hidden")) {
-                    liElements[i].removeAttribute("hidden");
-                }
-            }
-
-            // Hide remove filter button
-            document.getElementById("remove-filter").setAttribute("hidden", "");
-
-            unselectTags();
+    // Make sure no posts are hidden
+    liElements = document.getElementsByTagName("li");
+    for (var i = 0; i < liElements.length; i++) {
+        if (liElements[i].hasAttribute("hidden")) {
+            liElements[i].removeAttribute("hidden");
         }
+    }
+
+    // Hide remove filter button
+    document.getElementById("remove-filter").setAttribute("hidden", "");
+
+    unselectTags();
+}
 ```
 
 This resets everything by
