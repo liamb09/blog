@@ -62,9 +62,11 @@ button {
 
 #tag-menu {
     display: flex;
-    gap: 1rem;
+    gap: .75rem;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
 }
 
 .tag-menu-item {
@@ -107,6 +109,8 @@ TODO:
     color: var(--off-white);
     list-style-type: none;
     padding: 0;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 #blog-list > li {
@@ -129,14 +133,14 @@ TODO:
     background-color: var(--dark-grey);
     cursor: pointer;
     padding: 1rem;
-    width: 50rem;
-    margin: 0 auto !important;
+    width: calc(100%-2rem);
+    margin: 0;
     box-shadow: inset 0 0 0 0 var(--primary);
     transition: all .25s;
 }
 
 #blog-list-item:hover {
-    box-shadow: inset 52rem 0 0 0 var(--primary);
+    box-shadow: inset 70vw 0 0 0 var(--primary);
     color: var(--black);
 }
 
