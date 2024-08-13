@@ -4,7 +4,7 @@ title:       "Introduction + Portfolio Reflection"
 date:        2024-06-26 16:00:00 -0500
 description: This post goes through how I made my portfolio site.
 image:       website.png
-tags:        coding interesting
+tags:        coding
 ---
 
 Hi! My name is Liam, and this is the first post in my blog. I have just finished building this site that serves to showcase my projects, but more on that later.

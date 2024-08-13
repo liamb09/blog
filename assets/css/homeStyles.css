@@ -100,9 +100,7 @@ button {
 
 /* 
 TODO: 
-    add tag headers at top of blog list page to filter posts,
-    and fix home page glitch where you can still click on a post
-    even if your mouse is to the left or right of the card.
+    Override 404 page (also in main site)
 */
 
 #blog-list {

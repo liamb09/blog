@@ -4,7 +4,7 @@ title:       "Filtering posts"
 date:        2024-07-03 16:00:00 -0500
 description: Here I talk about how I created a filter for my blog posts.
 image:       blogWithFilter.png
-tags:        coding jekyll
+tags:        coding
 ---
 
 Hello!
