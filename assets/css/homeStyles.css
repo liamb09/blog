@@ -1,9 +1,11 @@
 :root {
+    --background: #ede8d0;
     --black: #0E0F19;
     --dark-grey: #252741;
     --off-white: #F8F8F8;
     --light-grey: #C2C2C2;
-    --primary: #7EC8B8;
+    --primary: #29937c;
+    --hover: #176554;
     --title-font-size: 14rem;
     --large-font-size: 1.4rem;
     --section-header-font-size: 3rem;
@@ -17,7 +19,7 @@
 
 html {
     font-family: Verdana, sans-serif;
-    background-color: var(--black);
+    background-color: var(--background);
     scroll-behavior: smooth;
 }
 
@@ -42,13 +44,13 @@ button {
 }
 
 .back-button:hover {
-    color: var(--off-white);
+    color: var(--hover);
 }
 
 #section-header {
     text-align: center;
     font-size: var(--section-header-font-size);
-    color: var(--off-white);
+    color: var(--primary);
 }
 
 .spacer {
@@ -56,7 +58,7 @@ button {
 }
 
 .filter-label {
-    color: var(--off-white);
+    color: var(--primary);
     text-align: center;
 }
 
@@ -70,7 +72,7 @@ button {
 }
 
 .tag-menu-item {
-    color: var(--off-white);
+    color: var(--primary);
     cursor: pointer;
     border-radius: 1rem;
     padding: .1rem;
@@ -83,13 +85,13 @@ button {
 
 .tag-menu-item:hover {
     background-color: var(--primary);
-    color: var(--black);
+    color: var(--background);
     border: 1px solid var(--primary);
 }
 
 .selected-tag {
     background-color: var(--primary);
-    color: var(--black);
+    color: var(--background);
     border: 1px solid var(--primary);
 }
 
@@ -104,7 +106,7 @@ TODO:
 */
 
 #blog-list {
-    color: var(--off-white);
+    color: var(--background);
     list-style-type: none;
     padding: 0;
     margin-left: 15%;
@@ -121,14 +123,17 @@ TODO:
 
 #blog-list > li > a {
     text-decoration: none;
-    color: var(--off-white);
+    color: var(--primary);
     display: block;
 }
 
 #blog-list-item {
     display: flex;
+    /* border-radius: 1rem; */
+    border: .4rem solid var(--primary);
+    box-sizing: border-box;
     border-radius: 1rem;
-    background-color: var(--dark-grey);
+    background-color: var(--background);
     cursor: pointer;
     padding: 1rem;
     width: calc(100%-2rem);
@@ -139,7 +144,7 @@ TODO:
 
 #blog-list-item:hover {
     box-shadow: inset 70vw 0 0 0 var(--primary);
-    color: var(--black);
+    color: var(--background);
 }
 
 #blog-list-item-text {

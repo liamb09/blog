@@ -58,8 +58,8 @@
     </script>
 </head>
 
-{% include header.html %}
-{% include footer.html %}
+<!-- {% include header.html %}
+{% include footer.html %} -->
 
 <a class="back-button" href="https://liamb09.github.io">&ltrif; Home</a>
 
@@ -68,7 +68,7 @@
 <h1 id="section-header">Blog</h1>
 
 <ul id="blog-list">
-    <p class="filter-label">Filter by tag: (some of these are random for testing at the moment)</p>
+    <!-- <p class="filter-label">Filter by tag: (some of these are random for testing at the moment)</p>
     {% if site.tags.size > 1 %}
         <div id="tag-menu">
             {% for tag in site.tags %}
@@ -76,7 +76,7 @@
             {% endfor %}
             <p id="remove-filter" onclick="removeFilter()" hidden>&#x2715;</p>
         </div>
-    {% endif %}
+    {% endif %} -->
     {% for post in site.posts %}
         <li class='{{ post.tags | join: " " }}'>
             <a href="{{ post.url | relative_url }}"><article id="blog-list-item">

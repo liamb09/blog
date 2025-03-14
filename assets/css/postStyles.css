@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
+    --background: #ede8d0;
+    --background-dark: #e7e0c0;
     --black: #0E0F19;
     --dark-grey: #252741;
     --off-white: #F8F8F8;
     --light-grey: #C2C2C2;
-    --primary: #7EC8B8;
+    --primary: #29937c;
+    --hover: #176554;
     --title-font-size: 14rem;
     --large-font-size: 1.4rem;
     --section-header-font-size: 3rem;
@@ -21,7 +24,7 @@
 html {
     font-family: Verdana, sans-serif;
     /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-    background-color: var(--black);
+    background-color: var(--background);
     scroll-behavior: smooth;
 }
 
@@ -60,7 +63,7 @@ footer {
 }
 
 .back-button:hover {
-    color: var(--off-white);
+    color: var(--hover);
 }
 
 .spacer {
@@ -83,9 +86,8 @@ footer {
 
 .blog-date {
     font-size: var(--small-font-size);
-    color: var(--off-white);
+    color: var(--primary);
     margin-top: 0;
-    color: var(--light-grey);
 }
 
 #tags {
@@ -94,8 +96,8 @@ footer {
 }
 
 #post-tag {
-    color: var(--off-white);
-    border: 1px solid var(--off-white);
+    color: var(--primary);
+    border: 1px solid var(--primary);
     border-radius: 1rem;
     padding: .1rem;
     padding-left: .75rem;
@@ -105,7 +107,7 @@ footer {
 
 .blog-body {
     font-size: var(--normal-font-size);
-    color: var(--off-white);
+    color: var(--primary);
 }
 
 .blog-body > img {
@@ -142,7 +144,7 @@ footer {
 
 .author-name {
     font-size: 2rem;
-    color: var(--off-white);
+    color: var(--primary);
     font-weight: bold;
 }
 
@@ -164,7 +166,7 @@ a:hover {
 pre, code {
     /* border: 1px solid #e8e8e8;  */
     border-radius: 3px;
-    background-color: var(--dark-grey);
+    background-color: var(--background-dark);
     font-size: var(--normal-font-size);
     font-family: "Courier Prime", monospace !important;
     line-height: 1.5rem;
